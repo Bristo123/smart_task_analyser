@@ -16,7 +16,13 @@ SECRET_KEY = 'django-insecure-4jdag01p=2a9q21!6oub*-^2fhxu--#@kwm5vx%4cbqn03(3#6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    "smart-task-analyser.onrender.com",
+    "0.0.0.0",
+    "localhost",
+    "127.0.0.1"
+]
+
 
 
 
