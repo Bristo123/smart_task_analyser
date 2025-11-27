@@ -51,7 +51,7 @@ async function analyzeAndRender() {
     loading.classList.remove("hidden");
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/api/tasks/analyze/", {
+        const response = await fetch("https://smart-task-analyser.onrender.com/api/tasks/analyze/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ tasks, strategy })
@@ -152,7 +152,7 @@ function sendFeedback(title, helpful) {
     // Disable buttons briefly to avoid spam
     disableAllFeedbackButtons(true);
 
-    fetch("http://127.0.0.1:8000/api/tasks/feedback/", {
+    fetch("https://smart-task-analyser.onrender.com/api/tasks/feedback/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ title, helpful })
