@@ -1,5 +1,4 @@
 let tasks = [];
-
 // ---------------- Add Task ----------------
 document.getElementById("taskForm").addEventListener("submit", (e) => {
     e.preventDefault();
